@@ -64,7 +64,7 @@ export default function Songlist(props: Props){
     const [list, setList] = useState([] as any)
     useEffect(()=> {
         const fetchData = async () =>{
-        const res = await fetch (`https://sample-fr74qt3l6a-uc.a.run.app/api/music?lyrics=${props.song}`)
+        const res = await fetch (`https://mymuse-backend-fr74qt3l6a-uc.a.run.app/api/music?lyrics=${props.song}`)
         const data = await res.json();
         console.log(data.cluster)
         setList(data.cluster);
@@ -80,16 +80,16 @@ export default function Songlist(props: Props){
         <TableRow>
           <TableHead className="w-[100px]">#</TableHead>
           <TableHead>Song</TableHead>
-          <TableHead>Method</TableHead>
-          <TableHead>Method</TableHead>
+          <TableHead>Artist</TableHead>
           {/* <TableHead className="text-right">Amount</TableHead> */}
         </TableRow>
       </TableHeader>
       <TableBody>
         {list.map((song : any ,index : any) => (
           <TableRow key={index}>
-            <TableCell className="font-medium">{index}</TableCell>
-            <TableCell className="font-medium">{song}</TableCell>
+            <TableCell className="font-medium">{index+1}</TableCell>
+            <TableCell className="font-medium">{song[0]}</TableCell>
+            <TableCell className="font-medium">{song[1]}</TableCell>
             {/* <TableCell>{list.song}</TableCell> */}
             {/* <TableCell>{invoice.paymentMethod}</TableCell>
             <TableCell className="text-right">{invoice.totalAmount}</TableCell> */}

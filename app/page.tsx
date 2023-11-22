@@ -27,7 +27,7 @@ export default function Home()
         setShowTable(true)
   }
   return (
-    <main className="flex min-h-screen flex-col items-center bg-cover bg-[url('/background.png')]">
+    <main className="flex min-h-screen flex-col items-center bg-gradient-to-br from-[#3E196E] via-[#D46C76] to-[#FFC07C]">
       <Navbar/>
       <div className=" flex min-h-screen w-full justify-center pt-[1.5rem] md:pt-[10rem]">
         <div className = "flex flex-col items-center space-y-6 md:space-y-10 px-[2rem]">
