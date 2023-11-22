@@ -626,6 +626,12 @@ video {
 .h-12 {
   height: 3rem;
 }
+.h-16 {
+  height: 4rem;
+}
+.h-14 {
+  height: 3.5rem;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -920,6 +926,9 @@ video {
 .pt-\[1\.5rem\] {
   padding-top: 1.5rem;
 }
+.pl-\[1rem\] {
+  padding-left: 1rem;
+}
 .text-left {
   text-align: left;
 }
@@ -965,6 +974,21 @@ video {
 }
 .text-\[0\.7rem\] {
   font-size: 0.7rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-\[1\.2rem\] {
+  font-size: 1.2rem;
 }
 .font-bold {
   font-weight: 700;
@@ -1088,6 +1112,10 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-12 {
+    height: 3rem;
   }
 
   .md\:w-full {

@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 pb-[2rem] md:py-5 md:block">
           <Link href="/">
-            <h1 className="flex items-end text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#FFC07C] to-[#D46C76] gap-4 pt-[1rem] pl-[3rem]">MyMuse
+            <h1 className="flex items-end text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#FFC07C] to-[#D46C76] gap-4 pt-[1rem] pl-[1rem]">MyMuse
             </h1>
             
           </Link>
