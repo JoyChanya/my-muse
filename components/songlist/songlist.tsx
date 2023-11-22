@@ -74,15 +74,15 @@ export default function Songlist(props: Props){
     // console.log(list)
     return (
 
-        <>
+        <div className="pb-[10rem]">
         <Table>
-      <TableCaption>A list of your recent invoices.</TableCaption>
       <TableHeader>
         <TableRow>
           <TableHead className="w-[100px]">#</TableHead>
           <TableHead>Song</TableHead>
-          {/* <TableHead>Method</TableHead>
-          <TableHead className="text-right">Amount</TableHead> */}
+          <TableHead>Method</TableHead>
+          <TableHead>Method</TableHead>
+          {/* <TableHead className="text-right">Amount</TableHead> */}
         </TableRow>
       </TableHeader>
       <TableBody>
@@ -104,7 +104,7 @@ export default function Songlist(props: Props){
       </TableFooter> */}
     </Table>
         
-        </>
+        </div>
     )
 
 }
